@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .hide{
+            display: none;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>kuni</h1>
+    <div class="main">
+        <ol>
+            <li class="f1">
+                <p>Australia</p>
+                <img src="./aus.png" alt="" class="hide" width="100px">
+            </li>
+            <li class="f1">
+                <p>Italy</p>
+                <img src="./italy.png" alt="" class="hide" width="100px">
+            </li>
+            <li class="f1">
+                <p>America</p>
+                <img src="./america.png" alt="" class="hide" width="100px">
+            </li>
+            <li class="f1">
+                <p>自分の国</p>
+                <img src="./india.png" alt="" class="hide" width="100px">
+            </li>
+            <li class="f1">
+                <p>好きな国</p>
+                <img src="./india.png" alt="" class="hide" width="100px">
+            </li>
+        </ol>
+        <button id="btn">show</button>
+    </div>
+    <script>
+
+        let f1= document.querySelectorAll('.main .f1 p');
+        let show= document.querySelectorAll('.main .f1 img');
+        let btn= document.querySelector('#btn');
+        
+        
+
+        btn.addEventListener('click', ()=>{
+            f1.forEach((e)=>{
+                e.classList.toggle("hide");
+            })
+            show.forEach((f)=>{
+                f.classList.toggle("hide");
+            })
+            
+            
+            
+
+        })
+
+    </script>
+</body>
+</html>
