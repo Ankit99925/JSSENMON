@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid{
+            display: grid;
+            grid-template-columns: repeat(4,.5fr);
+            grid-template-rows: repeat(2,1fr);
+            row-gap: 2px;
+            column-gap: 2px;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>images</h1>
+    <p>click the button to show images</p>
+    <div></div>
+    <button class="btn">click</button>
+    <script>
+        let btn = document.querySelector('.btn');
+        btn.addEventListener('click',()=>{
+            
+            let img1=document.createElement("img");
+            let img2=document.createElement("img");
+            let img3=document.createElement("img");
+            let img4=document.createElement("img");
+            let img5=document.createElement("img");
+            let img6=document.createElement("img");
+            let img7=document.createElement("img");
+            let img8=document.createElement("img");
+            let div1=document.querySelector('div');
+                img1.src='./aus.png'       ;     
+                img2.src='./aus.png'      ;      
+                img3.src='./aus.png'     ;       
+                img4.src='./aus.png'    ;        
+                img5.src='./aus.png'   ;         
+                img6.src='./aus.png'  ;          
+                img7.src='./aus.png' ;           
+                img8.src='./aus.png';        
+             div1.appendChild(img1)       ;
+             div1.appendChild(img2)       ;
+             div1.appendChild(img3)       ;
+             div1.appendChild(img4)       ;
+             div1.appendChild(img5)       ;
+             div1.appendChild(img6)       ;
+             div1.appendChild(img7)       ;
+             div1.appendChild(img8)       ;
+             div1.classList.add('grid');
+             btn.remove();
+        })
+    </script>
+</body>
+</html>
